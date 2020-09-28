@@ -12,7 +12,7 @@ class CalculatorService:
 
     def calc(self, num1, num2, opcode):
         print(f'서비스에 전달된 num1 : {num1}, num2 : {num2}, opcode: {opcode}')
-        tf.reset_defult_graph()
+        tf.reset_default_graph()
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
         
